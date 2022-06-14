@@ -29,6 +29,9 @@ color. The tags of the focused window are indicated with a filled square in the
 top left corner.  The tags which are applied to one or more windows are
 indicated with an empty square in the top left corner.
 .P
+The attach below patch makes newly spawned windows attach after the currently
+selected window
+.P
 dwm draws a small border around windows to indicate the focus state.
 .SH OPTIONS
 .TP
@@ -139,6 +142,16 @@ View all windows with any tag.
 .TP
 .B Mod1\-Control\-[1..n]
 Add/remove all windows with nth tag to/from the view.
+.TP
+.B Mod1\--
+Decrease the gaps around windows.
+.TP
+.B Mod1\-=
+Increase the gaps around windows.
+.TP
+.B Mod1\-Shift-=
+Reset the gaps around windows to
+.BR 0 .
 .TP
 .B Mod1\-Shift\-q
 Quit dwm.
